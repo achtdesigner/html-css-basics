@@ -70,8 +70,8 @@ p {
 }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/pencils-452238.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(img/burger-2.jpg);
   background-size: cover;
   background-position: center;
   height: 60vh;
@@ -83,6 +83,10 @@ p {
 .hero-text-box {
 }
 
+section {
+  padding: 80px 0;
+}
+
 .section-about-us {
 }
 
@@ -92,6 +96,9 @@ p {
 /* ------------------------ */
 /* NAVIGATION */
 /* ------------------------ */
+.navigation {
+  background-color: #fff;
+}
 .main-nav {
   max-width: 980px;
   margin: auto;
