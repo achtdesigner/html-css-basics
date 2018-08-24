@@ -15,6 +15,10 @@ Never use black in your design
 
 */
 
+/* ------------------------ */
+/* BASIC SETUP */
+/* ------------------------ */
+
 * {
   margin: 0;
   padding: 0;
@@ -24,21 +28,21 @@ Never use black in your design
 body {
   background-color: #fff;
   color: #555;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
   text-rendering: optimizeLegibility;
 }
+
+/* ------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------ */
 
 h1 {
   margin-top: 0px;
   color: #fff;
   margin-bottom: 20px;
-  font-size: 64px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 4px;
+  font-size: 96px;
 }
 
 h3 {
@@ -51,9 +55,16 @@ h3 {
 p {
   font-size: 18px;
   line-height: 120%;
+  margin-bottom: 20px;
 }
 
 .container {
+  padding: 0 16px;
+}
+
+.content {
+  max-width: 980px;
+  margin: auto;
   padding-bottom: 48px;
   padding-top: 48px;
 }
@@ -64,16 +75,60 @@ p {
   background-size: cover;
   background-position: center;
   height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.hero-text-box {
+}
+
+.section-about-us {
+}
+
 .section-cards {
   background-color: rgb(226, 226, 226);
 }
-
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
+/* ------------------------ */
+/* NAVIGATION */
+/* ------------------------ */
+.main-nav {
+  max-width: 980px;
+  margin: auto;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  background-color: #555;
+  border: 1px solid #555;
+  padding: 8px 16px;
+  transition: all ease 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #555;
+  color: #555;
+}
+
+/* ------------------------ */
+/* GRID */
+/* ------------------------ */
 .columns {
   display: flex;
   justify-content: space-between;
@@ -89,6 +144,9 @@ p {
   margin-right: 0px;
 }
 
+/* ------------------------ */
+/* CARD */
+/* ------------------------ */
 .card {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -101,6 +159,54 @@ p {
   box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.15);
   transform: scale(1.02);
 }
+
+/* ------------------------ */
+/* BUTTON */
+/* ------------------------ */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #ff654a;
+  border: 1px solid #ff654a;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  background-color: transparent;
+  border: 1px solid #ff654a;
+  color: #ff654a;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #df553d;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #df553d;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  color: #fff;
+  border: 1px solid #df553d;
+}
+
+/* ------------------------ */
+/* MEDIA QUERIES */
+/* ------------------------ */
 
 @media screen and (max-width: 480px) {
   .columns {
